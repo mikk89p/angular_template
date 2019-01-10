@@ -1,0 +1,38 @@
+<mat-toolbar id="footer-toolbar" color="primary" class="fixed-footer">
+  <mat-toolbar-row fxLayout='row' fxLayoutGap="25px">
+
+    <div fxFlex="grow" class="spacer"></div>
+
+    <button mat-icon-button routerLink="/">
+      <div>
+        <mat-icon class="material-icons md-24">home</mat-icon>
+        <span class="below-material-icon">{{'Home' | translate}}</span>
+      </div>
+    </button>
+
+    <button mat-icon-button routerLink="/about">
+      <div>
+        <mat-icon class="material-icons md-22">info</mat-icon>
+        <span class="below-material-icon">{{'About' | translate}}</span>
+      </div>
+    </button>
+
+<!--     <button mat-icon-button routerLink="/user/update">
+      <div>
+        <mat-icon class="material-icons md-22">settings</mat-icon>
+        <span class="below-material-icon">{{'Update' | translate}}</span>
+      </div>
+    </button> -->
+
+    <button mat-icon-button routerLink="/pricing">
+      <div>
+        <mat-icon class="material-icons md-22">shopping_cart</mat-icon>
+        <span class="below-material-icon">{{'Pricing' | translate}}</span>
+      </div>
+    </button>
+
+    <div fxFlex="grow" class="spacer"></div>
+
+  </mat-toolbar-row>
+
+</mat-toolbar>

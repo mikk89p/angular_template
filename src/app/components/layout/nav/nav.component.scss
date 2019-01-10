@@ -1,0 +1,25 @@
+.mat-toolbar-row, .mat-toolbar-single-row {
+  height: 48px;
+}
+
+.class_active {
+  font-weight: 700;
+  border-bottom: 2px solid white;
+}
+
+.mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button {
+  border-radius: 0px !important;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  width: 100%  !important;
+}
+
+.search {
+  max-width: 300px;
+  font-size: 12px;
+}

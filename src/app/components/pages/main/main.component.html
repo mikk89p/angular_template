@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1 *ngIf="!currentUser">
+    Please log in!
+  </h1>
+  <div *ngIf="currentUser">
+    <h2>Welcome {{currentUser.username}}</h2>
+    <p>{{tokenName}} : {{currentUser.token}}</p>
+    <p>id : {{currentUser.id}}</p>
+  </div>
+</div>

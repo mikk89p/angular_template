@@ -1,0 +1,47 @@
+<div fxLayout="row" fxLayout.xs="column" fxLayoutGap="30px" style='padding-top:30px;'>
+  <div>
+    <ul class="package">
+      <li class="header">Basic</li>
+      <li class="gray">$ 20/month</li>
+      <li>20GB Storage</li>
+      <li>100 Domains</li>
+      <li>1TB Bandwidth</li>
+      <li>1000 Email Boxes</li>
+      <li class="gray">
+        <!-- <div id="paypal-button-1"></div> -->
+        <div *ngIf="!currentUser">{{'Please login' | translate}}</div>
+        <ngx-paypal id="paypal-button-1" [config]="payPalConfig1"></ngx-paypal>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <ul class="package">
+      <li class="header highlight">Pro</li>
+      <li class="gray">$ 30/month</li>
+      <li>100GB Storage</li>
+      <li>500 Domains</li>
+      <li>2TB Bandwidth</li>
+      <li>1000 Email Boxes</li>
+      <li class="gray">
+        <!-- <div id="paypal-button-2"></div> -->
+        <div *ngIf="!currentUser">{{'Please login' | translate}}</div>
+        <ngx-paypal id="paypal-button-2" [config]="payPalConfig2"></ngx-paypal>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <ul class="package">
+      <li class="header">Premium</li>
+      <li class="gray">$ 60/month</li>
+      <li>250GB Storage</li>
+      <li>500 Domains</li>
+      <li>5TB Bandwidth</li>
+      <li>1000 Email Boxes</li>
+      <li class="gray">
+        <!-- <div id="paypal-button-3"></div> -->
+        <div *ngIf="!currentUser">{{'Please login' | translate}}</div>
+        <ngx-paypal id="paypal-button-3" [config]="payPalConfig3"></ngx-paypal>
+      </li>
+    </ul>
+  </div>
+</div>

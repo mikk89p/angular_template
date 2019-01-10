@@ -1,0 +1,48 @@
+<mat-toolbar id="toolbar" color="primary" class="fixed mat-elevation-z3">
+  <mat-toolbar-row fxLayout="row" fxFlexFill fxLayoutAlign="center">
+
+    <img mat-card-avatar src="assets/logo/logo.png" alt="image" style="height:38px; width:38px;">
+
+    <div fxFlex="grow" class="spacer"></div>
+
+    <mat-form-field fxFlex.xs="grow" class="search">
+      <input type="search" matInput [placeholder]="'Search a game' | translate">
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+
+    <div fxFlex="grow" class="spacer"></div>
+
+    <button mat-icon-button [mat-menu-trigger-for]="user">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+  </mat-toolbar-row>
+
+
+  <mat-toolbar-row fxLayout="row" fxFlexFill fxLayoutAlign="center" style="padding: 0 0px;">
+
+    <a fxFlex.xs="grow" routerLinkActive="class_active" mat-button class="section" routerLink="/"
+      [routerLinkActiveOptions]="{ exact: true }">
+      {{'Section 1' | translate}}
+    </a>
+
+    <a fxFlex.xs="grow" routerLinkActive="class_active" mat-button routerLink="/about">
+      {{'Section 2' | translate}}
+    </a>
+
+    <a fxFlex.xs="grow" routerLinkActive="class_active" mat-button routerLink="/pricing">
+      {{'Section 3' | translate}}
+    </a>
+
+  </mat-toolbar-row>
+
+</mat-toolbar>
+
+
+<mat-menu x-position="before" #user="matMenu">
+  <button *ngIf="currentUser" mat-menu-item routerLink="/user/update">{{'Profile' | translate}}</button>
+
+  <button *ngIf="!currentUser" mat-menu-item routerLink="login">{{'Login' | translate}} </button>
+  <button *ngIf="currentUser" mat-menu-item routerLink="logout">{{'Logout' | translate}} {{currentUser.username}}</button>
+  
+</mat-menu>

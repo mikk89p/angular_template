@@ -1,0 +1,29 @@
+<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+  <h2>{{'Login' | translate}}</h2>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <mat-form-field class="form-field" appearance="outline">
+        <mat-label>{{'E-mail or Username' | translate}}</mat-label>
+        <input matInput class="form-control" type="text" formControlName="username"  />
+        <mat-error *ngIf="formControls.username.invalid">{{getErrorMessage('username')}}</mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="form-group">
+      <mat-form-field class="form-field" appearance="outline">
+        <mat-label>{{'Password' | translate}}</mat-label>
+        <input matInput class="form-control" type="password" formControlName="password" />
+        <mat-error *ngIf="formControls.password.invalid">{{getErrorMessage('password')}}</mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="form-group">
+      <button mat-raised-button class="form-field" color="accent" [disabled]="loading">{{'Login' | translate}}</button>
+      <img *ngIf="loading" class="pl-3" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+    </div>
+
+    <a routerLink="/user/register">{{'Register an account' | translate}}</a>
+    <br>
+    <a routerLink="/user/forgotpassword">{{'Forgot Password' | translate}}?</a>
+  </form>
+</div>

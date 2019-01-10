@@ -1,0 +1,25 @@
+#footer-toolbar {
+  transition: bottom 0.4s; /* Transition effect when sliding down (and up) */
+}
+
+// Bottom Toolbar 
+.mat-toolbar-row, .mat-toolbar-single-row , .mat-toolbar-multiple-rows {
+  height: 48px !important; 
+  min-height: 48px !important; 
+}
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 101;
+  width: 100%  !important;
+}
+
+.below-material-icon{
+    position: relative;
+    top: 12px;
+    margin-left: calc(100% - 71px); /* optional */
+}
+
+

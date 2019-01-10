@@ -1,0 +1,10 @@
+<mat-card *ngIf='!(online$ | async)' [@enterAnimation] class='offline fixed-offline' >
+  {{'You are offline' | translate}}!
+</mat-card>
+
+<app-nav></app-nav>
+<div fxLayout fxLayoutAlign="center center">
+  <router-outlet class="content"></router-outlet>
+</div>
+<app-bottom-nav></app-bottom-nav>
+<app-alert></app-alert>

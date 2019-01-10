@@ -1,0 +1,14 @@
+.fixed-offline {
+  position: fixed;
+  top: 56;
+  left: 0;
+  z-index: 9000;
+}
+.offline {
+  color:white; 
+  background-color:firebrick; 
+  border-radius: 0px; 
+  padding:2px;
+  width:100%;
+  text-align: center;
+}

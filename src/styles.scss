@@ -1,0 +1,72 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body{
+  margin:0;
+  height: 100%;
+  padding-top:96px; //For nav
+  padding-bottom:48px; //For bottom nav
+  background-color:#fafafa;
+  scroll-behavior: smooth;
+  // font-family: Helvetica, sans-serif;
+}
+
+.alert-danger{
+  background-color:firebrick;
+}
+.alert-success{
+  background-color:rgb(58, 187, 47);
+}
+
+
+.material-icons.md-18 {
+  font-size: 18px !important;
+  height: 18px !important;
+  width: 18px !important;
+}
+
+.material-icons.md-22 {
+  font-size: 22px !important;
+  height: 22px !important;
+  width: 22px !important;
+}
+
+.material-icons.md-24 {
+  font-size: 24px !important;
+  height: 24px !important;
+  width: 24px !important;
+}
+
+.material-icons.md-28 {
+    font-size: 28px !important;
+    height: 28px !important;
+    width: 28px !important;
+}
+
+.material-icons.md-32 {
+    font-size: 32px !important;
+    height: 32px !important;
+    width: 32px !important;
+}
+
+.material-icons.md-36 {
+  font-size: 36px !important;
+  height: 36px !important;
+  width: 36px !important;
+}
+
+.material-icons.md-48 {
+  font-size: 48px !important;
+  height: 48px !important;
+  width: 48px !important;
+}
+
+.form-field {
+  max-width:300px !important;
+  width:80vw !important;
+}
+
+.top-shadow-z3 {
+  // h-offset v-offset blur spread color
+  // TODO - reverse mat-elevation, shadow on top
+}
