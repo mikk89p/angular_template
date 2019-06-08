@@ -19,7 +19,7 @@
  */
 
 /** IE9, IE10 and IE11 requires all of the following polyfills. **/
-import 'core-js/es6/symbol';
+/*import 'core-js/es6/symbol';
 import 'core-js/es6/object';
 import 'core-js/es6/function';
 import 'core-js/es6/parse-int';
@@ -32,14 +32,14 @@ import 'core-js/es6/array';
 import 'core-js/es6/regexp';
 import 'core-js/es6/map';
 import 'core-js/es6/weak-map';
-import 'core-js/es6/set';
+import 'core-js/es6/set';*/
 
 /**
  * If the application will be indexed by Google Search, the following is required.
  * Googlebot uses a renderer based on Chrome 41.
  * https://developers.google.com/search/docs/guides/rendering
  **/
-import 'core-js/es6/array';
+//import 'core-js/es6/array';
 
 /** IE10 and IE11 requires the following for NgClass support on SVG elements */
 // import 'classlist.js';  // Run `npm install --save classlist.js`.
