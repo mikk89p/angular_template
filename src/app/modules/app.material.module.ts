@@ -1,6 +1,28 @@
 import { NgModule } from '@angular/core';
+import {MatInputModule,
+  MatMenuModule,
+  MatIconModule,
+  MatToolbarModule,
+  MatButtonModule,
+  MatCheckboxModule,
+  MatCardModule,
+  MatTableModule,
+  MatSortModule,
+  MatSliderModule,
+  MatSelectModule,
+  MatFormFieldModule,
+  MatPaginatorModule,
+  MatAutocompleteModule,
+  MatProgressSpinnerModule,
+  MatDialogModule,
+  MatSnackBarModule,
+  MatRadioModule,
+  MatTooltipModule,
+  MatSlideToggleModule,
+  MatListModule,
+  MatChipsModule} from '@angular/material';
 
-import {
+  const modules = [
     MatInputModule,
     MatMenuModule,
     MatIconModule,
@@ -23,58 +45,11 @@ import {
     MatSlideToggleModule,
     MatListModule,
     MatChipsModule
-} from '@angular/material';
-
+  ];
 
 
 @NgModule({
-  imports: [
-    MatInputModule,
-    MatMenuModule,
-    MatIconModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatCheckboxModule,
-    MatCardModule,
-    MatTableModule,
-    MatSortModule,
-    MatSliderModule,
-    MatSelectModule,
-    MatFormFieldModule,
-    MatPaginatorModule,
-    MatAutocompleteModule,
-    MatProgressSpinnerModule,
-    MatDialogModule,
-    MatSnackBarModule,
-    MatRadioModule,
-    MatTooltipModule,
-    MatSlideToggleModule,
-    MatListModule,
-    MatChipsModule
-],
-  exports: [
-    MatInputModule,
-    MatMenuModule,
-    MatIconModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatCheckboxModule,
-    MatCardModule,
-    MatTableModule,
-    MatSortModule,
-    MatSliderModule,
-    MatSelectModule,
-    MatFormFieldModule,
-    MatPaginatorModule,
-    MatAutocompleteModule,
-    MatProgressSpinnerModule,
-    MatDialogModule,
-    MatSnackBarModule,
-    MatRadioModule,
-    MatTooltipModule,
-    MatSlideToggleModule,
-    MatListModule,
-    MatChipsModule
-],
+  imports: [modules],
+  exports: [modules],
 })
 export class MaterialModule { }
